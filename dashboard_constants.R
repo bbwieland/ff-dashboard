@@ -29,4 +29,15 @@ N_PLAYOFF_TEAMS = 4
 
 GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1hgeJVr1BPfSLrSnqPoOBg5dDJbBChDA_jPsYgwdaDXY/edit?gid=1078734378#gid=1078734378"
 GOOGLE_AUTH_EMAIL = "benbowenwieland@gmail.com"
+UPLOADER_FILEPATH = "/Users/ben/Desktop/Code/Dynasty Dashboard/dashboard_uploader.R"
+
+
+# Cronjob Constants -------------------------------------------------------
+
+CRONR_FREQUENCY = "daily"
+CRONR_TIME_OF_DAY = "7AM"
+CRONR_ID = "dynasty_uploader"
+
+# Connection to Sleeper ---------------------------------------------------
+
 con = ffscrapr::sleeper_connect(season=CURRENT_SEASON, league_id=LEAGUE_ID)

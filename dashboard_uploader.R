@@ -8,5 +8,3 @@ sims = simulate_season()
 upload_sheet(full_rosters, "All Players Raw")
 upload_sheet(waivers, "Waivers Raw")
 upload_sheet(sims, "Season Outcomes Raw")
-
-

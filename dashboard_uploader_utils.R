@@ -1,4 +1,5 @@
 library(googlesheets4)
+library(cronR)
 
 source("dashboard_constants.R")
 
@@ -8,4 +9,13 @@ upload_sheet <- function(df, tab, sheet_url = GOOGLE_SHEET_URL) {
               sheet = tab)
 } 
 
-googlesheets4::gs4_auth()
+schedule_cronjob <- function() {
+  
+  script_job = cron_rscript(UPLOADER_FILEPATH)
+  cron_add(script_job,
+           frequency = CRONR_FREQUENCY,
+           at = CRONR_TIME_OF_DAY,
+           id = CRONR_ID
+           )
+  
+}

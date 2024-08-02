@@ -79,5 +79,3 @@ simulate_season <- function(league_con=con) {
   return(output_df)
   
 }
-
-
