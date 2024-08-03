@@ -1,6 +1,5 @@
 # Basic Constants ---------------------------------------------------------
 
-
 CURRENT_SEASON = 2024
 LEAGUE_ID = "1048251064442605568"
 MY_TEAM = "Garrett Park Grinders"
@@ -30,6 +29,16 @@ N_PLAYOFF_TEAMS = 4
 GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1hgeJVr1BPfSLrSnqPoOBg5dDJbBChDA_jPsYgwdaDXY/edit?gid=1078734378#gid=1078734378"
 GOOGLE_AUTH_EMAIL = "benbowenwieland@gmail.com"
 UPLOADER_FILEPATH = "/Users/ben/Desktop/Code/Dynasty Dashboard/dashboard_uploader.R"
+
+
+# Filepath Constants ------------------------------------------------------
+
+FILE_PREFIX = "/Users/ben/Desktop/Code/Dynasty Dashboard/"
+
+ETL_FILE = paste0(FILE_PREFIX,"dashboard_etl.R")
+UTILS_FILE = paste0(FILE_PREFIX,"dashboard_utils.R")
+UPLOADER_UTILS_FILE = paste0(FILE_PREFIX, "dashboard_uploader_utils.R")
+
 
 
 # Cronjob Constants -------------------------------------------------------

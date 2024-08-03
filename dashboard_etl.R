@@ -1,5 +1,5 @@
-source("dashboard_utils.R")
-source("dashboard_constants.R")
+CONSTANTS_FILE = "/Users/ben/Desktop/Code/Dynasty Dashboard/dashboard_constants.R"
+source(UTILS_FILE)
 
 add_sleeper_ids <- function(df) {
   

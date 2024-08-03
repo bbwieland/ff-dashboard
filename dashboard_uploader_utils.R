@@ -1,7 +1,9 @@
 library(googlesheets4)
 library(cronR)
 
-source("dashboard_constants.R")
+CONSTANTS_FILE = "/Users/ben/Desktop/Code/Dynasty Dashboard/dashboard_constants.R"
+
+source(CONSTANTS_FILE)
 
 upload_sheet <- function(df, tab, sheet_url = GOOGLE_SHEET_URL) {
   write_sheet(data = df,
